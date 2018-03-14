@@ -78,7 +78,7 @@ theme: archer
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/oopstorm/blog.git
+  repo: https://github.com/oopstorm/oopstorm.github.io.git
   branch: master
 
 # archer 主题必须设置以下选项
