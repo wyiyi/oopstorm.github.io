@@ -7,10 +7,10 @@ author: OopStorm
 signature: 团队博客
 # SNS 各种链接
 social:
-  email: 12345@qq.com
-  github: //github.com/fi3ework
+  email: 
+  github: //github.com/oopstorm
   # wechat and qq should be a path of qr-code image
-  wechat: /assets/example_qr.png
+  wechat: 
   qq: 
   weibo: 
   zhihu: 
@@ -30,7 +30,7 @@ friends:
   friendC: 
 # about 关于
 about:
-  enable: true
+  enable: ture
   image: '/intro/about-bg.jpg'
 
 # ========== 站点 ========== #
@@ -39,7 +39,7 @@ SEO_title: OopStorm
 # 主标题
 main_title: OopStorm
 # 子标题
-subtitle: It's better to burn out than to fade away
+subtitle: 客户中心 团队协作 追求突破 乐于分享 简单高效
 # 首页顶部背景图
 site_header_image: '/intro/index-bg.jpg'
 # 文章顶部背景图

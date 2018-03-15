@@ -116,6 +116,29 @@ OopStorm 团队博客，欢迎分享自己的知识。
 
 自行在 /themes/archer/layout 中寻找对应的文件进行修改
 
+## About 页设置
+
+> 启用 About 页
+
+在hexo目录下执行
+
+	hexo new page "about"
+	
+在hexo目录下 `source/about/index.md` 中添加字段 `layout: about`，`title` 字段修改为 `about` 页的标题，正文为 `about` 页的内容，例如：
+
+	---
+	title: 这是自我介绍的题目
+	layout: about
+	---
+	这是一段自我介绍
+	
+在 `/themes/archer/_config.yml` 中添加以下字段，`enable` 字段控制是否开启 `about`，`image` 字段内容为 `about` 页的 `banner` 图像地址，不填写则默认使用首页 `banner` 图像。
+
+	about:
+	  enable: true
+	  image: '/intro/about-page.jpg'
+
+**目前 About 页已生成过了，需要修改时直接在 `source/about/index.md` 中进行修改即可**
 
 ## 更换主题
 
