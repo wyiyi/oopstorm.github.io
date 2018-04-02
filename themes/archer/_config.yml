@@ -52,7 +52,7 @@ _404_image: '/intro/404-bg.jpg'
 # 如果想添加其他评论插件，在 custom.ejs 中添加即可。
 comment:
   # Livere  site: https://livere.com/
-  livere_uid: 
+  livere_uid: MTAyMC8zNTQxMC8xMTk0Ng==
   # Disqus  site: https://disqus.com/
   disqus_shortname: 
   # Changyan  site: http://changyan.kuaizhan.com/
