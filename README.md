@@ -6,13 +6,21 @@ OopStorm 团队博客，欢迎分享自己的知识。
 
 1. 编写 Markdown 文件，并放置到 /source/_posts 中即可
 
-2. 需要设置标题，否则会显示 `[Untitled Post]`
+2. 需要在头部设置文章属性
 
-		// 标题设置方法
+		// 文章属性设置方法
 		在 Markdown 文件头部加入以下文本即可
+		layout: 文章默认填写 pages
+		title: 文章标题，未设置 title 会显示 [Untitled Post]
+		date: 支持年月日时分秒
+		tags: 文章标签，用于文章分类，可设置多个，例：
+		tags: [前端,Angular]
 		
 		---
+		layout: pages
 		title: Hello World
+		date: 2018.04.02
+		tags: 随笔
 		---
 
 ## 修改样式
