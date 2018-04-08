@@ -52,17 +52,17 @@ _404_image: '/intro/404-bg.jpg'
 # 如果想添加其他评论插件，在 custom.ejs 中添加即可。
 comment:
   # Livere  site: https://livere.com/
-  livere_uid: MTAyMC8zNTQxMC8xMTk0Ng==
+  livere_uid: 
   # Disqus  site: https://disqus.com/
   disqus_shortname: 
   # Changyan  site: http://changyan.kuaizhan.com/
   changyan_appid: 
   changyan_conf: 
   # Gitment  site: https://github.com/imsun/gitment
-  gitment_owner: 
-  gitment_repo: 
-  gitment_client_id: 
-  gitment_client_secret: 
+  gitment_owner: 2015lym
+  gitment_repo: https://github.com/oopstorm/oopstorm.github.io
+  gitment_client_id: 97de8cf027f56d1c6816
+  gitment_client_secret: 008570f35d326dd0237853d68dfd044a84f75af9
   # Youyan  site: http://www.uyan.cc/
   youyan_uid: 
 
