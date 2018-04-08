@@ -60,7 +60,7 @@ comment:
   changyan_conf: 
   # Gitment  site: https://github.com/imsun/gitment
   gitment_owner: 2015lym
-  gitment_repo: https://github.com/oopstorm/oopstorm.github.io
+  gitment_repo: oopstorm.github.io
   gitment_client_id: 97de8cf027f56d1c6816
   gitment_client_secret: 008570f35d326dd0237853d68dfd044a84f75af9
   # Youyan  site: http://www.uyan.cc/
