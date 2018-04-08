@@ -1,5 +1,5 @@
 <% if(theme.comment.gitment_owner && theme.comment.gitment_repo && theme.comment.gitment_client_id && theme.comment.gitment_client_secret) { %>
-<div id="container"></div>
+
 <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
 <script src="https://aimingoo.github.io/gitmint/dist-trial/gitmint.browser.js"></script>
 <script>
@@ -13,7 +13,7 @@
             client_secret: '<%- theme.comment.gitment_client_secret %>',
         },
     })
-    gitment.render('container')
+    gitment.render('comments')
 
 </script>
 <% } %>
