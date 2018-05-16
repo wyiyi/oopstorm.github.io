@@ -21,7 +21,7 @@ Liquibase 是什么
 
 [Flyway 官网](https://flywaydb.org/) 上有一个同类工具特性的对比，详见 `Feature Comparison` 部分或下图：
 
-![Feature Comparison](./2018-05-15-liquibase-with-gradle/Feature-Comparison.png)
+![Feature Comparison](/assets/2018-05-15-liquibase-with-gradle/Feature-Comparison.png)
 
 看图的话，Flyway 完胜，不过 **等等！看完下面内容再做决定**：
 
