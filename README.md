@@ -1,5 +1,7 @@
 # OopStorm 团队博客
 
+![Travis-CI](https://api.travis-ci.org/oopstorm/oopstorm.github.io.svg?branch=dev)
+
 OopStorm 团队博客，欢迎分享自己的知识。
 
 ## 发布文章
