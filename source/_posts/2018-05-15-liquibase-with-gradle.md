@@ -206,10 +206,10 @@ liquibase {
         // 对比生成数据库结构变更 Change Log
         diffDev {
             changeLogFile     'db/dev-diff.xml'
-            url               liquibaseUrl
+            url               liquibaseOldUrl
             username          liquibaseUsername
             password          liquibasePassword
-            referenceUrl      liquibaseOldUrl
+            referenceUrl      liquibaseUrl
             referenceUsername liquibaseUsername
             referencePassword liquibasePassword
         }
@@ -231,6 +231,8 @@ liquibase {
 1. 在 `./db/dev-data.xml` 可找到全库数据的 Change Log。
 
 > 注意：执行命令前需保证这两个文件不存在，否则会报错。
+
+> 生成的 Change Log 中的内容最好进行检查和一定的调整，以免自动生成的名称没有直观的含义，或产生冲突等问题。
 
 #### 结构变更 Change Log
 
