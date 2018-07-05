@@ -1,16 +1,12 @@
-# CONTRIBUTING
+# OopStorm 团队博客
 
-[bookworms](https://github.com/oopstorm/bookworms) 仓库旨在督促 OopStormers 每两月读完一本书，并进行分享交流
+[![Build Status](https://api.travis-ci.org/oopstorm/oopstorm.github.io.svg?branch=dev)](https://travis-ci.org/oopstorm/oopstorm.github.io)
 
-## 0x02
+OopStorm 团队博客，欢迎分享自己的知识。
 
-**提交读书笔记方法**
+## 发布文章
 
-
-1. 编写 Markdown 文件，并放置到 oopstorm/oopstorm.github.io/source/_posts 中
-
-		文件起名为：年-月-日-书名.md
-		例：2018-07-05-NPDP.md
+1. 编写 Markdown 文件，并放置到 /source/_posts 中即可
 
 2. 需要在头部设置文章属性
 
@@ -21,49 +17,141 @@
 		date: 支持年月日时分秒
 		tags: 文章标签，用于文章分类，可设置多个，例：
 		tags: [前端,Angular]
-		读书笔记的标签为必填，tag 为 bookworms
-
-		例：
 
 		---
 		layout: pages
-		title: 七周其语言：理解多种编程泛型
-		date: 2018.04.04
-		tags: bookworms
+		title: Hello World
+		date: 2018.04.02
+		tags: 随笔
 		---
 
-3. 在内容中写上书名、豆瓣评分、链接、以及 bookworms 中的简评
+## 修改样式
 
-		例：
-		### 七周七语言：理解多种编程泛型 | [8.1](https://book.douban.com/subject/10555435/)
-		
-		`七周七` 系列，可用来打破某种具体编程语言的局限性，发散思维
+> 基本样式修改
 
+	找到以下文件
+	/themes/archer/_config.yml
 
-## 0x01
+	# ========== 资料栏 ========== #
+	# avatar 团队头像
+	avatar: /avatar/OopStorm.jpg
+	# author 团队名
+	author: OopStorm
+	# signature 团队名下面的子标题
+	signature: 团队博客
+	# SNS 各种链接
+	social:
+	  email: 12345@qq.com
+	  github: //github.com/fi3ework
+	  # wechat and qq should be a path of qr-code image
+	  wechat: /assets/example_qr.png
+	  qq:
+	  weibo:
+	  zhihu:
+	  douban:
+	  facebook:
+	  twitter:
+	  instagram:
+	  stack-overflow:
+	  v2ex:
+	  linkedin:
+	  others:
+	  rss:
+	# member 成员
+	friends:
+	  AlphaHinex: //alphahinex.github.io
+	  devilx: //www.jianshu.com/u/3aad53dec75f
+	  friendC:
+	# about 关于
+	about:
+	  enable: true
+	  image: '/intro/about-bg.jpg'
 
-读书前需先将欲读书目提交至 [README](https://github.com/oopstorm/bookworms/blob/master/README.md) 文档中，提交时需遵守如下规范：
+	# ========== 站点 ========== #
+	# 浏览器标题
+	SEO_title: OopStorm
+	# 主标题
+	main_title: OopStorm
+	# 子标题
+	subtitle: It's better to burn out than to fade away
+	# 首页顶部背景图
+	site_header_image: '/intro/index-bg.jpg'
+	# 文章顶部背景图
+	post_header_image: '/intro/post-bg.jpg'
+	# 404 背景图
+	_404_image: '/intro/404-bg.jpg'
 
-1. 书目按书名英文或全拼 **字典序** 排序
-1. 书目信息需包含 [豆瓣读书](https://book.douban.com/) 评分及链接
-> 注意：优先读评分高的书，不要浪费时间读豆瓣评分过低的书目
+	# ========== 评论插件 ========== #
+	# 目前支持直接添加 Livere，Disqus，Gitment，畅言及友言，填写插件对应的字段即可启用。
+	# 如果想添加其他评论插件，在 custom.ejs 中添加即可。
+	comment:
+	  # Livere  site: https://livere.com/
+	  livere_uid:
+	  # Disqus  site: https://disqus.com/
+	  disqus_shortname:
+	  # Changyan  site: http://changyan.kuaizhan.com/
+	  changyan_appid:
+	  changyan_conf:
+	  # Gitment  site: https://github.com/imsun/gitment
+	  gitment_owner:
+	  gitment_repo:
+	  gitment_client_id:
+	  gitment_client_secret:
+	  # Youyan  site: http://www.uyan.cc/
+	  youyan_uid:
 
-例：
+	# ========== 统计 ========== #
+	# 是否开启不蒜子阅读量统计
+	busuanzi: true
+	# 百度统计(填写siteID)
+	baidu_analytics:
+	# Google统计(填写siteID)
+	google_analytics:
+	# CNZZ统计
+	CNZZ_analytics:
 
-```
-### [Head First Design Patterns](https://github.com/oopstorm/oopstorm.github.io/issues/9) | [9.1](https://book.douban.com/subject/1400656/)
+	# ========== 其他 ========== #
+	# 浏览器地址前的小标题
+	favicon: /assets/favicon.ico
+	# 首页的文章摘要字数(默认300，填0则不显示摘要)
+	truncate_length:
+	# enable toc
+	toc: true
+	# intro height (默认是屏幕高度的50%, 可以直接输入其他数字)
+	index_intro_height: 50
+	post_intro_height: 50
+	about_intro_height: 50
 
-Head First 系列主打通俗易懂，适合入门选择。
-本书也是图文并茂的介绍了各种设计模式，并配有使用示例，对各种设计模式会有一个较为直观的印象。
-推荐看英文版，很厚，但多图且英文词汇比较简单，看完之后会极大增强阅读英文文档自信心
-```
+> 深度修改样式
 
-## 0x10
+自行在 /themes/archer/layout 中寻找对应的文件进行修改
 
-交流分享前，需先为书目在 [团队博客](https://oopstorm.github.io/) 中创建一篇博文，并完成评论的初始化工作（需联系团队博客管理员协助进行）。之后将评论的 issue 链接更新到 [README](https://github.com/oopstorm/bookworms/blob/master/README.md) 相应书目的书名处。分享的内容可在 issue 中进行评论。
+## About 页设置
 
-例：
+> 启用 About 页
 
-* [书目](https://github.com/oopstorm/bookworms/blob/master/README.md#%E5%9B%BE%E8%A7%A3-http--81)
-* [博文](https://oopstorm.github.io/2018/04/03/2018-04-03-http/)
-* [评论](https://github.com/oopstorm/oopstorm.github.io/issues/7)
+在hexo目录下执行
+
+	hexo new page "about"
+
+在hexo目录下 `source/about/index.md` 中添加字段 `layout: about`，`title` 字段修改为 `about` 页的标题，正文为 `about` 页的内容，例如：
+
+	---
+	title: 这是自我介绍的题目
+	layout: about
+	---
+	这是一段自我介绍
+
+在 `/themes/archer/_config.yml` 中添加以下字段，`enable` 字段控制是否开启 `about`，`image` 字段内容为 `about` 页的 `banner` 图像地址，不填写则默认使用首页 `banner` 图像。
+
+	about:
+	  enable: true
+	  image: '/intro/about-page.jpg'
+
+**目前 About 页已生成过了，需要修改时直接在 `source/about/index.md` 中进行修改即可**
+
+## 更换主题
+
+1. 下载新的主题
+2. 将主题放入 /themes 中
+3. 修改 /_config.yml 中的 theme 参数为新的主题
