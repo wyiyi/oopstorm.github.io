@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: 七周其语言：理解多种编程泛型
+title: 七周七语言：理解多种编程泛型
 date: 2018.04.04
 tags: bookworms
 ---
